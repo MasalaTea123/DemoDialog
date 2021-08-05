@@ -186,7 +186,11 @@ TextView tvDemo2, tvDemo3, tvTotal, tvDemo4,tvDemo5;
                     }
                 };
 
-                TimePickerDialog myTimeDialog=new TimePickerDialog(MainActivity.this,myTimeListener,20,00,true);
+                Calendar now=Calendar.getInstance();
+                int hourOfDay=now.get(Calendar.HOUR_OF_DAY);
+                int minutes=now.get(Calendar.MINUTE);
+
+                TimePickerDialog myTimeDialog=new TimePickerDialog(MainActivity.this,myTimeListener,hourOfDay,minutes,true);
 
                 myTimeDialog.show();
 

@@ -10,8 +10,8 @@
     <Button
         android:id="@+id/buttonDemo1"
         android:layout_width="match_parent"
-        android:layout_height="270dp"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
+
         android:text="@string/demo_1_simple_dialog" />
 
     <LinearLayout
